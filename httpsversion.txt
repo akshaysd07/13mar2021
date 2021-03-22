@@ -1,0 +1,34 @@
+Invented by Tim Berners-Lee at CERN in the years 1989–1991, HTTP (Hypertext Transfer Protocol) is the underlying communication protocol of World Wide Web. HTTP functions as a request–response protocol in the client–server computing model. HTTP standards are developed by the Internet Engineering Task Force (IETF) and the World Wide Web Consortium (W3C), culminating in the publication of a series of Requests for Comments (RFCs). HTTP has four versions — HTTP/0.9, HTTP/1.0, HTTP/1.1, and HTTP/2.0. Today the version in common use is HTTP/1.1 and the future will be HTTP/2.0.
+HTTP/0.9 — The One-line Protocol
+-----------------------------------
+Initial version of HTTP — a simple client-server, request-response, telenet-friendly protocol
+Request nature: single-line (method + path for requested document)
+Methods supported: GET only
+Response type: hypertext only
+Connection nature: terminated immediately after the response
+Popular web servers (Apache, Nginx) still supports HTTP/0/9. Try opening up a Telnet session and accessing google.com
+
+HTTP/1.0 — Building extensibility
+--------------------------------
+Browser-friendly protocol
+Provided header fields including rich metadata about both request and response (HTTP version number, status code, content type)
+Response: not limited to hypertext (Content-Type header provided ability to transmit files other than plain HTML files — e.g. scripts, stylesheets, media)
+Methods supported: GET , HEAD , POST
+
+HTTP/1.1 — The standardized protocol
+-------------------------------------
+This is the HTTP version currently in common use.
+Introduced critical performance optimizations and feature enhancements — persistent and pipelined connections, chunked transfers, compression/decompression, content negotiations, virtual hosting (a server with a single IP Address hosting multiple domains), faster response and great bandwidth savings by adding cache support.
+Methods supported: GET , HEAD , POST , PUT , DELETE , TRACE , OPTIONS
+
+Hyper Text Transfer Protocol Secure (HTTPS)
+-----------------------------------------------
+is the secure version of HTTP. It uses SSL/TLS for secure encrypted communications.
+Originally developed by Netscape in mid-1990s, SSL (Secure Socket Layer) is a cryptographic protocol enhancement to HTTP, which defines how client and server should communicate with each other securely. TLS (Transport Layer Security) is the successor of SSL.
+An HTTPS connection can protect the data transfer from the man-in-the-middle attacks and common security threats by providing bidirectional encryption for communications between a client and server.
+
+Although HTTPS is secure by its design, the SSL/TLS handshake process consumes a significant time before establishing an HTTPS connection. It normally costs 1–2 seconds and drastically slows down the startup performance of a website.
+
+HTTP/2.0 and the future:-
+-----------------------
+All above features are being used by major web servers and browsers today. But modern enhancements like HTTP/2.0, Server Side Events (SSE), and Websockets have changed the way that the traditional HTTP works. In my next article on Web API Design with HTTP and Websockets, we will discuss how we should choose them in real-world projects.

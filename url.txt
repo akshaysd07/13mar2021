@@ -1,0 +1,2 @@
+When we enter a URL into a web browser.The browser looks up the IP address for the domain name via DNS.The browser sends a HTTP request to the server.The server sends back a HTTP response and browser begins rendering the HTML. The browser sends requests for additional objects embedded in HTML (images, css, JavaScript) and repeats process.
+Once the page is loaded, the browser sends further async requests as needed.

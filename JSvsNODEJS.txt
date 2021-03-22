@@ -1,0 +1,14 @@
+Browser JS                                           NODE JS
+
+1. window is a predefined global object			1.window is not a predefined object.
+which has functions and attributes
+
+2. location is another predefined object		2. location is not predefined object.
+
+3. It is a programming language.				3. It is a interpreter and environment for Java Script.
+
+4. JavaScript running any engine like Spider	4.Node JS only run in a V8 engine which mainly used by google chrome
+monkey (FireFox), JavaScript Core (Safari), 
+V8 (Google Chrome).
+
+5. Javascript can only be run in the browsers.  5. NodeJS code can be run outside the browser.

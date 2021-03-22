@@ -1,0 +1,12 @@
+
+     HTTP1.1                                   HTTP2
+
+1. HTTP1 is Textual.					1. HTTP2 is binary
+
+2. It is simplex(ordered & blocking).   2.It is multiplexed.
+
+3. It is by default secured.			3. It is not secured by default.
+
+4. It has overheading problem.          4. It uses header compression to reduce overhead.
+
+5.Methods supported: GET , HEAD , POST  5. It also supports all the methods with inbuilt security and improved performance.
